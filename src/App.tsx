@@ -1,14 +1,12 @@
 import { Heading, useColorMode, VStack } from "@chakra-ui/react";
-
 import { useAtom, useSetAtom } from "jotai";
+import { useEffect } from "react";
 
 import AddTodo from "./components/AddTodo";
 import TodoList from "./components/TodoList";
 import ColorModeSwitcher from "./components/ColorModeSwitcher";
-
 import { themeAtom } from "./stores/themeStore";
 import { addTodoAtom, deleteTodoAtom, todosAtom } from "./stores/todoStore";
-import { useEffect } from "react";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();

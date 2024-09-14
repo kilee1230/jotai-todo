@@ -1,6 +1,4 @@
-// components/TodoList.tsx
 import React from "react";
-import { Todo } from "../stores/todoStore";
 import {
   VStack,
   HStack,
@@ -11,6 +9,8 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 import { DeleteIcon } from "@chakra-ui/icons";
+
+import { Todo } from "../stores/todoStore";
 
 interface TodoListProps {
   todos: Todo[];
