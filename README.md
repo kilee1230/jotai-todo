@@ -69,6 +69,10 @@ The application supports theme switching between light and dark modes using Chak
 
 Jotai devtools are integrated to help you debug the state changes in your application. You can inspect the state and see how it evolves over time.
 
+## Screenshot
+
+![Alt text](./screenshot.png)
+
 ## Learn More
 
 To learn more about the tools used in this project, check out the following resources:
