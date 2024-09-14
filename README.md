@@ -18,8 +18,8 @@ To get started with this project, follow these steps:
 1. **Clone the repository**:
 
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+    git clone https://github.com/kilee1230/jotai-todo.git
+    cd jotai-todo
    ```
 
 2. **Install dependencies**:
