@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { Provider as JotaiProvider, useAtom } from "jotai";
+import { useAtom } from "jotai";
 import { DevTools } from "jotai-devtools";
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 
@@ -21,9 +21,7 @@ const Main = () => {
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <JotaiProvider>
-      <DevTools />
-      <Main />
-    </JotaiProvider>
+    <DevTools />
+    <Main />
   </StrictMode>
 );
