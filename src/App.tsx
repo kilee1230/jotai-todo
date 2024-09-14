@@ -8,15 +8,19 @@ import ColorModeSwitcher from "./components/ColorModeSwitcher";
 
 import { themeAtom } from "./stores/themeStore";
 import { addTodoAtom, deleteTodoAtom, todosAtom } from "./stores/todoStore";
+import { useEffect } from "react";
 
 function App() {
+  const { colorMode, toggleColorMode } = useColorMode();
   const [theme, setTheme] = useAtom(themeAtom);
   const [todos] = useAtom(todosAtom);
 
   const setAddTodo = useSetAtom(addTodoAtom);
   const deleteTodo = useSetAtom(deleteTodoAtom);
 
-  const { toggleColorMode } = useColorMode();
+  useEffect(() => {
+    setTheme(colorMode);
+  }, [colorMode, setTheme]);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
