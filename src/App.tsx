@@ -26,7 +26,7 @@ function App() {
   return (
     <VStack p={4}>
       <ColorModeSwitcher toggleTheme={toggleTheme} theme={theme} />
-      <Heading size="2xl">Chakra UI Todo App</Heading>
+      <Heading size="2xl">Jotai-Todo App</Heading>
       <AddTodo addTodo={setAddTodo} />
       <TodoList todos={todos} deleteTodo={deleteTodo} />
     </VStack>

@@ -25,7 +25,7 @@ const AddTodo: React.FC<AddTodoProps> = ({ addTodo }) => {
     if (contentRef.current === null) return;
 
     if (!contentRef.current.value) {
-      toastError("No content");
+      toastError("This field is required.");
       return;
     }
 
@@ -38,14 +38,10 @@ const AddTodo: React.FC<AddTodoProps> = ({ addTodo }) => {
   return (
     <form onSubmit={handleSubmit}>
       <HStack m="8">
-        <Input
-          variant="filled"
-          placeholder="learning Chakra UI"
-          ref={contentRef}
-        />
+        <Input variant="filled" placeholder="Add new todo" ref={contentRef} />
 
         <Button type="submit" colorScheme="green" px="8">
-          Add Todo
+          Add
         </Button>
       </HStack>
     </form>

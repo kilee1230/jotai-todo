@@ -21,7 +21,7 @@ const TodoList: React.FC<TodoListProps> = ({ todos, deleteTodo }) => {
   if (todos.length === 0)
     return (
       <Badge colorScheme="green" p="4" m="4" borderRadius="lg">
-        No Todos, yay!!!
+        No Todos, yay~
       </Badge>
     );
 
