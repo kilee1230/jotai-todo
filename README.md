@@ -25,12 +25,12 @@ To get started with this project, follow these steps:
 2. **Install dependencies**:
 
    ```sh
-   npm install
+   pnpm install
    ```
 
 3. **Run the development server**:
    ```sh
-   npm run dev
+   pnpm dev
    ```
 
 ## Expanding the ESLint configuration
