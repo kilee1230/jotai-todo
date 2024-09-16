@@ -5,7 +5,7 @@ import { DevTools } from "jotai-devtools";
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 
 import App from "./App";
-import { themeAtom } from "./stores/themeStore";
+import { themeAtom } from "./atoms/theme";
 import "jotai-devtools/styles.css";
 
 const Main = () => {

@@ -4,9 +4,9 @@ import { useEffect } from "react";
 
 import AddTodo from "./components/AddTodo";
 import TodoList from "./components/TodoList";
-import ColorModeSwitcher from "./components/ColorModeSwitcher";
-import { themeAtom } from "./stores/themeStore";
-import { addTodoAtom, deleteTodoAtom, todosAtom } from "./stores/todoStore";
+import ThemeSwitcher from "./components/ThemeSwitcher";
+import { themeAtom } from "./atoms/theme";
+import { addTodoAtom, deleteTodoAtom, todosAtom } from "./atoms/todo";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <VStack p={4}>
-      <ColorModeSwitcher toggleTheme={toggleTheme} theme={theme} />
+      <ThemeSwitcher toggleTheme={toggleTheme} theme={theme} />
       <Heading size="2xl">Jotai-Todo App</Heading>
       <AddTodo addTodo={setAddTodo} />
       <TodoList todos={todos} deleteTodo={deleteTodo} />

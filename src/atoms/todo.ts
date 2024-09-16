@@ -1,14 +1,10 @@
 import { atom } from "jotai";
 import { nanoid } from "nanoid";
-
-// Types
-export type Todo = { id: string; body: string };
+import { Todo } from "./types";
 
 // Todos Atoms
 export const todosAtom = atom<Todo[]>([]);
 todosAtom.debugLabel = "todosAtom";
-
-// CRUD Operations for Todos
 
 // Create
 export const addTodoAtom = atom(null, (get, set, body: string) => {

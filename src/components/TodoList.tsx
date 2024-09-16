@@ -9,8 +9,7 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 import { DeleteIcon } from "@chakra-ui/icons";
-
-import { Todo } from "../stores/todoStore";
+import { Todo } from "../atoms/types";
 
 interface TodoListProps {
   todos: Todo[];
