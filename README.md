@@ -1,3 +1,5 @@
+[![github pages](https://github.com/kilee1230/jotai-todo/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/kilee1230/jotai-todo/actions/workflows/gh-pages.yml)
+
 # React + TypeScript + Vite + Jotai + Chakra UI
 
 This repository provides a setup to get React working in Vite with Jotai for state management, including devtools for debugging, and Chakra UI for styling. The application includes a todo list and theme update functionality.
