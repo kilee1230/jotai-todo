@@ -28,7 +28,7 @@ function App() {
   return (
     <VStack p={4}>
       <ThemeSwitcher toggleTheme={toggleTheme} theme={theme} />
-      <Heading size="2xl">Jotai-Todo App test</Heading>
+      <Heading size="2xl">Jotai-Todo App</Heading>
       <AddTodo addTodo={setAddTodo} />
       <TodoList todos={todos} deleteTodo={deleteTodo} />
     </VStack>
