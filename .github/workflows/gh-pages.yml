@@ -6,12 +6,24 @@ on:
     - main # default branch
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: pnpm/action-setup@v3
+    - name: Checkout
+      uses: actions/checkout@v4
 
-    - name: Build
+    - uses: pnpm/action-setup@v4
+      name: Install pnpm
+      with:
+        version: 9
+        run_install: false
+
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'pnpm'
+
+    - name: Install and Build
       run: pnpm install & pnpm build
 
     - name: Deploy
