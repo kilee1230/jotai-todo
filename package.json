@@ -29,7 +29,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "add": "^2.0.6",
     "eslint": "^9.16.0",
-    "eslint-plugin-react-hooks": "5.1.0-rc-fb9a90fa48-20240614",
+    "eslint-plugin-react-hooks": "5.1.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.13.0",
     "jotai-devtools": "^0.10.1",
