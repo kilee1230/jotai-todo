@@ -5,6 +5,16 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     setupFiles: "./setupTests.ts",
-    exclude: ["./src/App.tsx", "./src/main.tsx", "**/node_modules/**"],
+    exclude: ["**/node_modules/**", "**/dist/**"],
+    coverage: {
+      exclude: [
+        "./src/App.tsx",
+        "./src/main.tsx",
+        "./dist/**",
+        "**.config.**",
+        "./src/vite-env.d.ts",
+        "./src/atoms/**",
+      ],
+    },
   },
 });
