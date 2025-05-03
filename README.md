@@ -12,6 +12,7 @@ This repository provides a setup to get React working in Vite with Jotai for sta
 - **Jotai**: A primitive and flexible state management library for React.
 - **Chakra UI**: A simple, modular, and accessible component library for React.
 - **Devtools**: Integrated devtools for Jotai to help with debugging state.
+- **Vitest**: A Vite-native unit test framework for fast and reliable testing.
 
 ## Getting Started
 

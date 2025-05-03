@@ -2,9 +2,9 @@ import { Heading, useColorMode, VStack } from "@chakra-ui/react";
 import { useAtom, useSetAtom } from "jotai";
 import { useEffect } from "react";
 
-import AddTodo from "./components/AddTodo";
-import TodoList from "./components/TodoList";
-import ThemeSwitcher from "./components/ThemeSwitcher";
+import AddTodo from "./components/ui/AddTodo";
+import TodoList from "./components/ui/TodoList";
+import ThemeSwitcher from "./components/ui/ThemeSwitcher";
 import { themeAtom } from "./atoms/theme";
 import { addTodoAtom, deleteTodoAtom, todosAtom } from "./atoms/todo";
 
